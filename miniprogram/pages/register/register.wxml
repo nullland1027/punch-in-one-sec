@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="section">
+    <view class="section-item">
+      <view class="section-tips">
+        <label>账号:</label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请输入学号" bindinput="stu_numInput" value="{{stu_numInput}}" maxlength='18'></input>
+      </view>
+    </view>
+    <view class="section-item">
+      <view class="section-tips">
+        <label>用户名:</label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请输入姓名" bindinput="usernameInput" value="{{usernameInput}}" maxlength='18'></input>
+      </view>
+    </view>
+    <view class="section-item">
+      <view class="section-tips">
+        <label>
+          <text decode="{{true}}">密&ensp;&ensp;&ensp;&ensp;码:</text>
+      </label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请输入密码" bindinput="passwordInput" password="true" value="{{passwordInput}}"></input>
+      </view>
+    </view>
+  
+   <view class="section-item">
+      <view class="section-tips">
+        <label>
+          <text decode="{{true}}">确认密码:</text>
+      </label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请确认密码" bindinput="rightwordInput" password="true" value="{{rightwordInput}}"></input>
+      </view>
+    </view>
+  </view>
+
+  
+
+  <view>
+    <button class="section-btn" hover-class="btn-class" bindtap="registerBtnClick">注册 </button>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/my1/my1.wxml-->
+     <view class="view_image_text">
+      <block wx:if="{{imagePath=='' && hasUserInfo}}">
+      <image class="image_radius" src="{{userInfo.avatarUrl}}" bindtap="changephoto"/>
+      </block>
+      <block wx:else>
+        <image class="image_radius" src="{{imagePath}}" bindtap="changephoto"/>
+      </block>
+      <text class="text">{{username}}</text>
+     </view>
+
+
+  <view class="view_3">
+    <view class="list-item" bindtap="gotopassword"
+    hover-class="click-bu">
+      <image class="item-image" src="/icon/密码.png"></image>
+      <text class="item-text">修改密码</text>
+      <image class="image-jiantou" src="/icon/go1.png"></image>
+    </view>
+    <view class="list-item" bindtap="gotofeedback"
+    hover-class="click-bu">
+      <image class="item-image" src="/icon/问题反馈.png"></image>
+      <text class="item-text">问题反馈</text>
+      <image class="image-jiantou" src="/icon/go1.png"></image>
+    </view>
+    <view class="list-item" bindtap="gotoaboutus"
+    hover-class="click-bu">
+      <image class="item-image" src="/icon/关于我们.png"></image>
+      <text class="item-text">关于我们</text>
+      <image class="image-jiantou" src="/icon/go1.png"></image>
+    </view>
+    <view>
+    <button type="default" bindtap="logout" hover-class="b1">退出登录</button>
+   </view>
+  </view>

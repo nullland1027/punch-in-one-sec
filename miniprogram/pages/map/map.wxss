@@ -1,0 +1,126 @@
+/* pages/map/map.wxss */
+page {
+	background-color: #f8f8f8;
+	height: 100%;
+	font-size: 32rpx;
+	line-height: 1.6;
+	justify-content: center;
+  align-items: center;
+}
+
+.page-body {
+	padding: 20rpx 0;
+}
+
+.page-section-gap {
+	box-sizing: border-box;
+	padding: 0 30rpx;
+}
+
+.btn-area {
+	margin-top: 60rpx;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 30rpx;
+}
+
+.page-body-button {
+	margin-bottom: 30rpx;
+}
+
+.btn{
+  width: 200px;
+  height: 200px;
+  color: #fff; 
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  border-radius: 700px;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  line-height: 100px;
+	margin-left: 24%;
+	margin-top: 20%;
+ }
+.btn .text{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+	text-align: center;
+	border-radius: 700px;
+	padding-top: 50px;
+}
+.btn::before,
+.btn::after{
+  position:absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  background: rgba(2, 126, 251, 1);
+	transition: all 0.5s ease;
+	border-radius: 700px;
+}
+.btn::before{
+  width: 0;
+  height: 2px;
+}
+.btn::after{
+  height: 0;
+	width: 2px;
+	border-radius: 700px;
+}
+
+.btn_hover::before{
+  width: 100%;
+}
+.btn_hover::after{
+	height: 100%;
+	border-radius: 700px;
+}
+.btn .text::before,
+.btn .text::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+	background: rgba(2, 126, 251, 1);
+	border-radius: 700px;
+}
+.btn .text::before{
+  width: 0;
+  height: 2px;
+}
+.btn .text::after{
+  height: 0;
+	width: 2px;
+	border-radius: 700px;
+}
+.btn_hover{
+  background: #fff;
+}
+.btn .text_hover{
+	color:rgba(2, 126, 251, 1);
+	border-radius: 700px;
+}
+.btn_hover .text_hover::before{
+  width:100%;
+}
+.btn_hover .text_hover::after{
+	height:100%;
+	border-radius: 700px;
+}
+/* 按钮上的实时时间显示 */
+.head-text{
+  color: rgb(196, 192, 192);
+  position: relative;
+  z-index: 99;
+  text-align: center;
+  font-weight: 600;
+  font-size: 35rpx;
+  /* color: whitesmoke; */
+  left: -5rpx;
+  bottom: 140rpx;
+
+}

@@ -1,0 +1,26 @@
+/* miniprogram/pages/userFeedback/userFeedback.wxss */
+textarea{
+  margin: 80rpx auto;
+  border-radius: 30rpx;
+  background: rgba(180, 184, 180, 0.664);
+  padding: 30rpx;
+  align-self: center;
+  width: 70%;
+}
+.btn {
+  margin: 0  auto;
+  width: 25%;
+  font-size: 28rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: #fff;
+  margin-top: 40rpx;
+  background: linear-gradient(to right, #A3CA8B, #A3CA8B);
+  border-radius: 50rpx;
+}
+.btn-class{   
+  top: 5rpx;
+  background: linear-gradient(to right, #789468, #789468);
+  box-shadow:0px 0px 8px rgb(121, 120, 120) inset; 
+  }

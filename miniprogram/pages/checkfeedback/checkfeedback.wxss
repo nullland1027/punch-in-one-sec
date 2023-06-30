@@ -1,0 +1,42 @@
+.history-table-wrap{
+  position: absolute;
+  width: 96%;
+  height: 90%;
+  margin-left: 2%;
+  top: 25rpx;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* 表格代码   */
+.table{
+  border:1px solid #dadada;
+  border-right:0;
+  border-bottom: 0;
+  width: 98%;
+  margin-left: 1%;
+}
+.tr{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width: 100%;
+}
+.th1,.td1{
+  width: 100%;
+}
+.th{
+  font-weight: 800;
+  background-color: #cceccda2;
+  font-size: 30rpx;
+  color: #330e0e;
+}
+.td{
+  font-size: 25rpx;
+  color:black;
+}

@@ -1,0 +1,18 @@
+<view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">姓名</view>
+          <view class="th th2">学号</view>
+          <view class="th th3">是否打卡</view>
+          <view class="th th4">健康码颜色</view>
+      </view>
+      <block wx:for="{{object}}" wx:key="{1}">
+        <view class="tr bg-g">
+          <view class="td td1">{{item.username}}</view>
+          <view class="td td2">{{item.stu_num}}</view>
+          <view class="td td3">{{isCheck?"是":"否"}}</view>
+          <view class="td td4">绿码</view>
+        </view>
+      </block>
+    </view>
+ </view>

@@ -1,0 +1,41 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/userLogin/userLogin",
+          "pathName": "pages/userLogin/userLogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/password/password",
+          "pathName": "pages/password/password",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/checkfeedback/checkfeedback",
+          "pathName": "pages/checkfeedback/checkfeedback",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

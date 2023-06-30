@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/userLogin/userLogin",
+    "pages/search/search",
+    "pages/password/password",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/userFeedback/userFeedback",
+    "pages/question/question",
+    "pages/photo/photo",
+    "pages/register/register",
+    "pages/adminLogin/adminLogin",
+    "pages/date/date",
+    "pages/map/map",
+    "pages/aboutus/aboutus",
+    "pages/adminmy/adminmy",
+    "pages/adminpwd/adminpwd",
+    "pages/tongji/tongji",
+    "pages/checkfeedback/checkfeedback"
+  ],
+  "entryPagePath": "pages/userLogin/userLogin",
+  "networkTimeout": {},
+  "window": {
+    "navigationBarTitleText": "",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/date/date",
+        "iconPath": "icon/日历.png",
+        "text": "日历",
+        "selectedIconPath": "icon/日历c.png"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "text": "打卡",
+        "iconPath": "icon/打卡.png",
+        "selectedIconPath": "icon/打卡c.png"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "签到",
+        "iconPath": "icon/签到.png",
+        "selectedIconPath": "icon/签到c.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/我的.png",
+        "selectedIconPath": "icon/我的c.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

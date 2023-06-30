@@ -1,0 +1,120 @@
+
+/* 主体开始 */
+.section {
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  width: 90%;
+}
+
+.section-item {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1rpx solid lightgray;
+}
+
+.section-tips {
+  float: left;
+  margin: 0rpx 40rpx;
+  width: 170rpx;
+  height: 120rpx;
+  line-height:120rpx; 
+  font-size: 14px;
+}
+
+.section-input {
+  float: left;
+  width: 400rpx;
+  height: 120rpx;
+}
+
+.section-input input {
+  width: 100%;
+  height: 100%;
+  line-height:100%;
+  font-size: 13px;
+}
+
+.section-input1 {
+  float: left;
+  width: 300rpx;
+  height: 120rpx;
+}
+
+.section-input1 input {
+  width: 100%;
+  height: 100%;
+  line-height:100%;
+  font-size: 13px;
+}
+
+.section-input2{
+  margin-top: 46rpx;
+  width: 100%;
+  height: 100%;
+  line-height:100%;
+  font-size: 13px;
+}
+
+.section-code {
+  float: left;
+  width: 200rpx;
+  height: 120rpx;
+  background-color: white;
+  text-align: left;
+}
+
+.section-code:after{
+  border: none;
+}
+
+.section-code text{
+  font-size: 12px;
+  line-height:  120rpx;
+  color: #e05b56;
+  border-bottom: 1rpx solid #e05b56;
+}
+
+.section-btn {
+  background-color: #A3CA8B;
+  margin: 60rpx 50rpx;
+  width: 650rpx;
+  height: 80rpx;
+  font-size: 15px;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  border: none;
+}
+.btn-class{   
+  top: 5rpx;
+  background: linear-gradient(to right, #789468, #789468);
+  box-shadow:0px 0px 8px rgb(121, 120, 120) inset; 
+  }
+.wjmm{
+  float: right;
+  margin-top: 50rpx;
+}
+
+.wjmm .wjmma {
+  float: left;
+  margin-right: 10rpx;
+}
+.wjmm .ccmm {
+  float: left;
+  margin-right: 30rpx;
+}
+/*
+.selector{
+  width: 200rpx;
+  height: 100rpx;
+  margin: 30rpx 200rpx;
+  line-height: 100rpx;
+  color: #fff;
+  text-align: center;
+  background:linear-gradient(263deg,rgba(211,221,255,1),rgba(178,194,249,1));
+  box-shadow: 0 25rpx 20rpx -20rpx rgba(178,194,249,1);
+  border-radius:45rpx;
+}
+ 主体结束 */
+

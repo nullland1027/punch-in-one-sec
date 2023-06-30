@@ -1,0 +1,7 @@
+<view class="v1">
+<view class="head"><image  bindtap="headimage" src='{{imgURL}}'></image></view>
+<view  class="text" mode="aspecFill"  bindtap="headimage">点击更换头像</view>
+    <toast hidden="{{status}}" duration="2000" bindchange="toastHide">
+        修改成功
+    </toast>
+</view>

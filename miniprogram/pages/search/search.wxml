@@ -1,0 +1,12 @@
+<!--pages/search/search.wxml-->
+<view class="orderSearchContain"> 
+    <view class='top'>
+      <view class='inputBox'>
+        
+        <wux-search-bar type="text" name="search" confirm-type='search' placeholder="请输入关键词" value="{{search_value}}" bindinput="inputValue" bind:change="onSearchChange" bind:focus="onSearchFocus" bind:blur="onSearchBlur" bind:confirm="onSearchConfirm" bind:clear="onSearchClear" bind:cancel="onSearchCancel"  bindconfirm="confirm" />
+      </view>
+      <view class="right" bindtap='go_result'>
+        搜索
+      </view>
+    </view>
+</view>

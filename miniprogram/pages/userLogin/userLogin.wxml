@@ -1,0 +1,34 @@
+<!--miniprogram/pages/userLogin.wxml-->
+<view class="login">
+    <image src="../../icon/p1.png"></image>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section-item">
+            <view class="section-tips">
+                <label>账号： </label>
+            </view>
+            <view class="section-input">
+                <input name="userName" class="{{ userName == true ? 'userError' : ''}}" type="text" maxlength="12" placeholder="请输入学号" bindinput="getAccount"/>
+            </view>       
+        </view>
+        <view class="section-item">
+            <view class="section-tips">
+                <label>
+                    <text decode="true">密码： </text>    
+                </label>
+            </view>
+            <view class="section-input">
+                <input name="userPassword" class="{{ userPassword == true ? 'userError' : ''}}" type="text" password  maxlength="100" placeholder="请输入密码"  bindinput="getPwd"/>
+            </view>       
+        </view>
+        <view class="wjmm">
+               <view class="wjmma" type="primary" bindtap='adminLogin'>管理员登录</view>
+               <view class="ccmm"  type="primary" bindtap='ccmm'>注册</view>
+            </view>
+        <view>
+            <button class = "section-btn"  hover-class="btn-class" bindtap="login"> 登录 </button>
+        </view>
+        <view class="wjmm">
+            <view class="wjmma" type= "primary" bindtap="feedback">问题反馈</view>
+        </view>
+    </form>
+</view>

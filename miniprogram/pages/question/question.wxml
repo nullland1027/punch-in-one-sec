@@ -1,0 +1,88 @@
+<!--pages/question/question.wxml-->
+<view class='container'>
+  <form>
+    <view class='top'>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>学号：</view>
+          <view>
+            <input placeholder="请输入学号" maxlength='20' value="{{id}}" bindinput="xuehao"></input>
+          </view>
+        </view>
+        <view class='x' bindtap="cancel1">✖</view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>姓名：</view>
+          <view>
+            <input placeholder="请输入姓名" maxlength='20' value="{{name}}" bindinput="name"></input>
+          </view>
+        </view>
+        <view class='x' bindtap="cancel2">✖</view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>性别：</view>
+        <view>
+          <radio-group bindchange="sex1">
+            <radio value="male"><text>男</text></radio>
+            <radio value="female"><text>女</text></radio>
+          </radio-group>
+        </view>
+      </view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>校区：</view>
+        <view>
+          <radio-group bindchange="xiaoqu">
+            <radio value="pf"><text>屏峰校区</text></radio>
+            <radio value="zh"><text>朝晖校区</text></radio>
+          </radio-group>
+        </view>
+      </view>
+      </view>   
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>居住地是否处于高风险：</view>
+        <view>
+          <radio-group bindchange="juzhudi">
+            <radio value="yes"><text>是</text></radio>
+            <radio value="no"><text>否</text></radio>
+          </radio-group>
+        </view>
+      </view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>近期是否从高风险地区返回：</view>
+        <view>
+          <radio-group bindchange="recent">
+            <radio value="yes"><text>是</text></radio>
+            <radio value="no"><text>否</text></radio>
+          </radio-group>
+        </view>
+      </view>
+      </view>
+      <view class='x_line'></view>
+      <view class='one_list'>
+        <view class='change'>
+          <view class=''>今日是否绿码：</view>
+        <view>
+          <radio-group bindchange="recent">
+            <radio value="yes"><text>是</text></radio>
+            <radio value="no"><text>否</text></radio>
+          </radio-group>
+        </view>
+      </view>
+      </view>
+    </view>
+    <view class='btn' hover-class="btn-class" bindtap="submit">确定</view>
+  </form>
+</view>
+

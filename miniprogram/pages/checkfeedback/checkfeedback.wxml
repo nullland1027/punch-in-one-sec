@@ -1,0 +1,12 @@
+<view class='history-table-wrap'>
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">反馈内容</view>
+      </view>
+      <block wx:for="{{object}}" wx:key="{1}">
+        <view class="tr bg-g">
+          <view class="td td1">{{item.content}}</view>
+        </view>
+      </block>
+    </view>
+ </view>

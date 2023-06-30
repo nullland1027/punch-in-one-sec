@@ -1,0 +1,3 @@
+<!--miniprogram/pages/userFeedback/userFeedback.wxml-->
+<textarea class="area" name="content"  type="text"  placeholder="反馈内容" bindinput="Content"/>
+<button  class="btn" hover-class="btn-class" bindtap="add"> 提交 </button>

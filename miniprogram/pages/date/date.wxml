@@ -1,0 +1,36 @@
+<!--pages/date/date.wxml-->
+<view class='MYearShow-group'>
+<button class='buttonimg' bindtap='' plain='true' bindtap='back'><image src='img/back.png' mode='widthFix' ></image></button>
+<view>{{cur_year}}-{{cur_month}}</view>
+<button class='buttonimg' bindtap=''plain='true' bindtap='forward'><image src='img/forward.png' mode='widthFix'></image></button>
+</view>
+<view class="week">
+    <view wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+</view>
+<view class='Main-group'>
+  <view class="columns" wx:for="{{cur_days.length/7}}" wx:for-index="i" wx:key="i">
+      <view wx:for="{{cur_days}}" wx:for-index="j" wx:key="j">
+        <!-- 行 -->
+        <view class="rows" wx:if="{{j/7 == i}}">
+          <view class="rows" wx:for="{{7}}" wx:for-index="k" wx:key="k">
+            <!-- 每个月份的空的单元格 -->
+            <view class='cell' wx:if="{{cur_days[j+k].date == null}}"> 
+              <text decode="{{true}}">&nbsp;&nbsp;</text>
+            </view>
+            <!-- 每个月份的有数字的单元格 -->
+            <view class='cell' wx:else>
+              <!-- 当前日期已签到 -->
+              <view wx:if="{{cur_days[j+k].isSign == true}}" style='background-color:#00b4fc' class='cell'>
+                <text>{{cur_days[j+k].date}}</text>
+              </view>
+              <!-- 当前日期未签到 -->
+              <view wx:else>
+                <text>{{cur_days[j+k].date}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+  </view>
+</view>
+<button bindtap='Signup' disabled='{{isDisable}}' class="btn" hover-class="btn-class">{{text}}</button>
